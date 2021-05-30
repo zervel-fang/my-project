@@ -83,5 +83,6 @@ Then, calling `PolicyFactory.create` using Truffle console:
 ```bash
 npx truffle console --network <network>
 # Truffle console is launched
+# github project
 > Promise.all([PolicyFactory.deployed(), TheFirstPolicy.deployed()]).then(([factory, policy]) => factory.create(policy.address))
 ```
